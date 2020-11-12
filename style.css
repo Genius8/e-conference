@@ -1,0 +1,8 @@
+.nav {
+    display: block;
+}
+.topNav ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+}
