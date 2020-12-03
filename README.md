@@ -1,5 +1,5 @@
-# e-conferenc
-# Capstone Event Page >
+# e-conference
+# Capstone Event Page 
  This is a project of a Cindy Shin's Global Summit page. 
  ![screenshot](./screenshot.png) 
  ## Built With 
@@ -24,4 +24,5 @@
  ## Authors 👤 
  **OEM⭐ 
  ## Twitter
+ https://twitter.com/erasmus_okiror
  

@@ -1,3 +1,7 @@
+div.disabled {
+  overflow-x: hidden; 
+}
+
 .nav {
     display: block;
 }
@@ -16,7 +20,8 @@
 .nav justify-content-end {
   list-style: none;
 }
-.active-btn {
+#active,
+#active-btn {
   color: #ec5242;
 }
 .nav-item a {
@@ -36,10 +41,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    overflow: hidden;
 }
 .jumbo {
   max-width: 100%; 
   height: auto;
+  overflow: hidden;
 }
 .jumbo h4 {
     color: #ec5242;
@@ -76,14 +83,8 @@
     font-family: cocogoose, sans-serif;
     text-transform: uppercase;
   }
-  
-  .jumbo h3 {
-    margin: 0 auto;
-    margin-top: 1em;
-    color: #272a31;
-    line-height: 1.2;
-    font-size: 1.2rem;
-  }
+
+
   .side {
     background-color: black;
   }
@@ -98,7 +99,11 @@
     width: 3vw;
   }
   .card-deck {
-    padding: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .card-deck card {
+    margin-bottom: 10px;
   }
   .card-deck img{
 height:50px;
@@ -108,9 +113,6 @@ width:50px;
 height:200px;
 width:200px;
 align-items: center;
-}
-.row {
-  
 }
 .partners {
   background-color: #272a31;
@@ -155,23 +157,7 @@ align-items: center;
   align-items: flex-start;
 }
 
-.main-event h4 {
-  color: #ec5242;
-  font-size: 1.5rem;
-  margin: 0 auto;
-}
-
-.main-event h1 {
-  font-family: cocogoose, sans-serif;
-  color: #ec5242;
-  font-size: 3rem;
-  line-height: 1.2;
-  margin: 0 auto;
-  margin-top: 0.5em;
-  text-align: center;
-}
-
-.main-event p {
+.jumbo p {
   color: #272a31;
   line-height: 1.5;
   margin: 0 auto;
@@ -183,18 +169,38 @@ align-items: center;
   text-align: center;
 }
 
-.main-event h2 {
-  font-size: 1.5rem;
-  margin: 0 auto;
-  margin-top: 2em;
-  color: #272a31;
-  font-family: cocogoose, sans-serif;
-  text-transform: uppercase;
-}
-
-.main-event h3 {
+.jumbo h3 {
   margin: 0 auto;
   margin-top: 1em;
   color: #272a31;
   line-height: 1.2;
-  font-size: 1.2rem;}
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .chef-image { min-width: 30%; }
+
+  .card-body { min-width: 50%; }
+
+  .btn { padding: 0.5em; }
+
+  #part-container { padding: 2em; }
+
+  .secondNav { padding: 0.5em; }
+}
+
+@media (max-width: 576px) {
+  .footer { display: inline-block; }
+
+  .raffle-ticket { flex-direction: column; }
+
+  .ticket-table {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: -10%;
+}
+.jumbo p {
+  line-height: 1;
+  width: 80%;
+}
+}
