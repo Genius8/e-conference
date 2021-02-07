@@ -185,6 +185,14 @@ align-items: center;
   height: 100%;
 }
 
+.tbl {
+  border:6px solid red
+}
+
+.tik h3{
+  text-align: center;
+}
+
 @media (max-width: 992px) {
   .chef-image { min-width: 30%; }
 
