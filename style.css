@@ -186,11 +186,16 @@ align-items: center;
 }
 
 .tbl {
-  border:6px solid red
+  border:6px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: 60%;
 }
 
 .tik h3{
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 992px) {
