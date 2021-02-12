@@ -99,7 +99,7 @@
     padding: 10px;
   }
 
-  .card-deck card {
+  .card-deck .card {
     margin-bottom: 10px;
     padding-top: 10px;
   }
@@ -107,6 +107,14 @@
 height:50px;
 width:50px;
 }
+
+.card-deck .card-img-top {
+  width: 5vw;
+  height: 5vh;
+  display: flex;
+  margin: auto; 
+}
+
 .image-container {
 height:260px;
 width:200px;
@@ -154,8 +162,51 @@ align-items: center;
   display: flex;
   flex-direction: column;
 }
+
+.container .logo {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  width: 300px;
+  height: 200px;
+  border: 1px solid rgb(215, 215, 233);
+  box-shadow: 3px 4px 10px #bdbbbb;
+  box-sizing: border-box;
+}
+
+.container h1 {
+  margin-left: auto;
+  margin-right: auto;
+  color: red;
+  font-weight: bolder;
+}
+
 .container h2 {
   text-align: center;
+}
+
+.about-logo h2 {
+  margin: 0 auto;
+}
+
+.container h6 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container a {
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+  color: black;
+  font-weight: 900;
+}
+
+hr {
+  margin-top: 10px;
+    border: 1px solid #ec5242;
+    border-radius: 5px;
+    width: 3vw;
 }
 
 .jumbo p {
@@ -187,6 +238,7 @@ align-items: center;
 
 .tbl {
   border:6px solid red;
+  border-image: radial-gradient(rgb(241, 11, 61), rgb(248, 248, 245)) 1;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
@@ -198,7 +250,7 @@ align-items: center;
   margin-right: auto;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .chef-image { min-width: 30%; }
 
   .card-body { min-width: 50%; }
@@ -210,7 +262,7 @@ align-items: center;
   .secondNav { padding: 0.5em; }
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .footer { display: inline-block; }
 
   .raffle-ticket { flex-direction: column; }
