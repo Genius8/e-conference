@@ -13,13 +13,20 @@
     display: flex;
     justify-content: flex-end; 
 }
-.nav justify-content-end {
+
+.nav  {
   list-style: none;
 }
 #active,
 #active-btn {
   color: #ec5242;
 }
+
+
+#active-btn:hover{
+  background-color: #272a31;
+}
+
 .nav-item a {
   color: #272a31;
 }
@@ -99,6 +106,11 @@
     padding: 10px;
   }
 
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+
   .card-deck .card {
     margin-bottom: 10px;
     padding-top: 10px;
@@ -120,6 +132,7 @@ height:260px;
 width:200px;
 align-items: center;
 }
+
 .partners {
   background-color: #272a31;
   color: #d3d3d3;
@@ -146,7 +159,7 @@ align-items: center;
   align-items: center;
 }
 .footer-about { 
-  margin-right: 15em; 
+  margin-right: 15em;
 }
 .main-event,
 .about-event {
@@ -166,7 +179,7 @@ align-items: center;
 .container .logo {
   margin-left: auto;
   margin-right: auto;
-  padding: 50px;
+  
   width: 300px;
   height: 200px;
   border: 1px solid rgb(215, 215, 233);
@@ -185,10 +198,40 @@ align-items: center;
   text-align: center;
 }
 
-.about-logo h2 {
-  margin: 0 auto;
+.container p {
+  text-align: center;
 }
 
+.logo img {
+  margin: 20px 10px;
+  float: left;
+}
+
+.about-logo h2 {
+  margin: 0 auto;
+  display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.about-logo .logo-text h3 {
+    display: block;
+    font-size: 1.5em;
+    padding-left: 115px;
+    font-weight: bold;
+}
+
+.about-logo .logo-text h4 {
+  display: block;
+  font-size: 1.5em;
+  padding-left: 115px;
+  padding-top: 1px;
+
+}
 .container h6 {
   margin-left: auto;
   margin-right: auto;
@@ -229,6 +272,29 @@ hr {
   font-size: 1.2rem;
 }
 
+.tickets-select::before {
+  content: '\25C6';
+  color: #ec5242;
+  padding-right: 5px;
+}
+
+.tickets-select {
+  border: 1px solid rgb(214, 210, 210);
+    padding: 1em;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+#dd {
+  color:white;
+}
+
+#ex {
+  width: fit-content;
+  block-size: fit-content
+}
+
 .chef-image {
   object-fit: cover;
   display: block;
@@ -243,6 +309,14 @@ hr {
   margin-right: auto;
   width: 70%;
   height: 60%;
+}
+
+.lunch .h6 {
+  border: 1px solid rgb(214, 210, 210);
+  padding: 1em;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 3em;
 }
 
 .tik h3{
@@ -262,7 +336,7 @@ hr {
   .secondNav { padding: 0.5em; }
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .footer { display: inline-block; }
 
   .raffle-ticket { flex-direction: column; }
@@ -272,8 +346,49 @@ hr {
   grid-template-columns: 1fr;
   
 }
+
+@media (max-width:768px) {
+  .about-logo .logo {
+    padding: 2em;
+  }
+  .footer .bg-dark {
+    display: inline-block;
+  }
+}
+
+@media (max-width:480px) {
+  .footer .bg-dark {
+    display: inline-block;
+  }
+}
+
+@media (max-width:576px) {
+  .footer {display: inline-block;}
+}
+
+@media (max-width:480px) {
+  .part-list {
+    flex-direction: column; 
+  }
+}
+
 .jumbo p {
   line-height: 1;
   width: 80%;
 }
+}
+@media (max-width:768px) {
+  .card-deck {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width:576px){
+  .tbl {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: -10%;
+  }
 }
