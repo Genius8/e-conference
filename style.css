@@ -22,6 +22,9 @@
   color: #ec5242;
 }
 
+.menu-btn {
+
+}
 
 #active-btn:hover{
   background-color: #272a31;
@@ -91,9 +94,13 @@
   .side {
     background-color: black;
   }
-  .side h2 {
+  .side .h2 {
     color: white;
     text-align: center;
+  }
+
+  #oth {
+    color: white;
   }
   .hr {
     margin-top: 10px;
@@ -280,10 +287,29 @@ hr {
 
 .tickets-select {
   border: 1px solid rgb(214, 210, 210);
-    padding: 1em;
-    border-radius: 20px;
-    margin: 0 auto;
-    margin-top: 3em;
+  padding: 1em;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.lunch-select {
+  border: 1px solid rgb(214, 210, 210);
+  padding: 1em;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.lunch-select::before {
+  content: '\25C6';
+  color: #ec5242;
+  padding-right: 5px;
+  text-decoration: tomato;
+}
+
+.lt .li{
+  float: left;
 }
 
 #dd {
@@ -304,11 +330,28 @@ hr {
 
 .tbl {
   border:6px solid red;
-  border-image: radial-gradient(rgb(241, 11, 61), rgb(248, 248, 245)) 1;
+  border-image: radial-gradient(rgb(221, 4, 4), rgb(243, 238, 239)) 1;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
   height: 60%;
+  grid-template-columns: 1fr 1.5fr 2fr 1.5fr;
+  
+}
+
+.box {
+  background-color: #ec5242;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    margin-top: -0.8em;
+}
+
+.fa-chevron-down {
+  transform: rotate(305deg);
+  padding: 1em;
+  color: white;
 }
 
 .lunch .h6 {
@@ -319,10 +362,61 @@ hr {
   margin-top: 3em;
 }
 
+.tik {
+  background: #e2dddd;
+}
+
 .tik h3{
   margin-left: auto;
   margin-right: auto;
 }
+
+.lunch-ticket-1,
+.lunch-ticket-2 {
+  margin: 0 auto;
+  margin-top: 4em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lunch-ticket-1 .li {
+  display: inline;
+}
+
+.lunch-ticket .li{
+  display: inline;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.gr {
+  background-color: #f5efef;
+  height: 5vh;
+}
+
+.lt .li {
+  float: left;
+  list-style: none;
+}
+
+.lunch-ticket {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.button {
+  background-color: #ec5242;
+  color: white;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-top: 2em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button:hover { background-color: #272a31; }
 
 @media (min-width: 992px) {
   .chef-image { min-width: 30%; }
@@ -339,9 +433,9 @@ hr {
 @media (max-width: 576px) {
   .footer { display: inline-block; }
 
-  .raffle-ticket { flex-direction: column; }
+  .lt { flex-direction: column; }
 
-  .ticket-table {
+  .tbl {
   display: grid;
   grid-template-columns: 1fr;
   
@@ -391,4 +485,14 @@ hr {
     grid-template-columns: 1fr;
     margin-left: -10%;
   }
+}
+
+@media (max-width: 768px) {
+.menu-btn {
+    display: block;
+    position: absolute;
+    top: 1.5em;
+    left: 1em;
+    color: #272a31;
+}
 }
