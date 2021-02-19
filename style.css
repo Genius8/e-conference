@@ -113,6 +113,7 @@
   .card {
     display: flex;
     justify-content: center;
+    opacity: 60% black;
   }
 
   .card-deck .card {
@@ -120,8 +121,8 @@
     padding-top: 10px;
   }
   .card-deck img{
-height:50px;
-width:50px;
+   height:50px;
+   width:50px;
 }
 
 .card-deck .card-img-top {
@@ -390,14 +391,17 @@ hr {
   height: 5vh;
 }
 
+
 .lt .li {
   float: left;
   list-style: none;
+
 }
 
 .lunch-ticket {
   display: flex;
   justify-content: space-around;
+  
  
 }
 
