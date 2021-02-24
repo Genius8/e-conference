@@ -405,6 +405,11 @@ hr {
  
 }
 
+.footer-logo-text {
+  width: fit-content;
+  block-size: fit-content
+}
+
 .button {
   background-color: #ec5242;
   color: white;
@@ -428,6 +433,7 @@ hr {
     left: 36%;
   }
 }
+
 
 @media (min-width: 992px) {
   .chef-image { min-width: 30%; }
@@ -498,13 +504,13 @@ hr {
 
 }
 
-@media (max-width:576px){
+/*@media (max-width:576px){
   .tbl {
     display: grid;
     grid-template-columns: 1fr;
     margin-left: -10%;
   }
-}
+}*/
 
 @media (max-width: 768px) {
 .menu-btn {
