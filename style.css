@@ -117,7 +117,6 @@
 .card {
   display: flex;
   justify-content: center;
-  opacity: 60% black;
 }
 
 .card-deck .card {
@@ -318,8 +317,8 @@ hr {
 }
 
 #ex {
-  width: fit-content;
-  block-size: fit-content;
+  width: auto;
+  block-size: auto;
 }
 
 .chef-image {
@@ -394,8 +393,8 @@ hr {
 }
 
 .footer-logo-text {
-  width: fit-content;
-  block-size: fit-content;
+  width: auto;
+  block-size: auto;
 }
 
 .button {
