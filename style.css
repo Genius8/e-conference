@@ -51,6 +51,7 @@
   max-width: 100%;
   height: auto;
   overflow: hidden;
+  
 }
 
 .jumbo h4 {
@@ -117,6 +118,7 @@
 .card {
   display: flex;
   justify-content: center;
+  
 }
 
 .card-deck .card {
