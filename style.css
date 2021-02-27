@@ -405,21 +405,21 @@ hr {
   margin: 0 auto;
   margin-top: 2em;
   font-weight: bold;
-  position: absolute;
+  position: sticky;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  top: 160%;
+  top: 20%;
   left: 45%;
 }
 
 .button:hover { background-color: #272a31; }
 
-@media (max-width: 556px) {
+/*@media (max-width: 556px) {
   .button {
     top: 395%;
     left: 36%;
   }
-}
+}*/
 
 @media (min-width: 992px) {
   .chef-image { min-width: 30%; }
@@ -505,3 +505,10 @@ hr {
     color: #272a31;
   }
 }
+
+/*@media (max-width:554px) {
+  .button {
+    top:390%;
+    left:35%;
+  }
+}*/
