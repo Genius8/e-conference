@@ -472,6 +472,7 @@ hr {
   @media (max-width: 768px) {
     .part-list {
       flex-direction: column;
+      display: inline-block;
     }
   }
 
