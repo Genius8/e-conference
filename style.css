@@ -414,12 +414,12 @@ hr {
 
 .button:hover { background-color: #272a31; }
 
-/*@media (max-width: 556px) {
+/* @media (max-width: 556px) {
   .button {
     top: 395%;
     left: 36%;
   }
-}*/
+} */
 
 @media (min-width: 992px) {
   .chef-image { min-width: 30%; }
@@ -507,9 +507,9 @@ hr {
   }
 }
 
-/*@media (max-width:554px) {
+/* @media (max-width:554px) {
   .button {
     top:390%;
     left:35%;
   }
-}*/
+} */
